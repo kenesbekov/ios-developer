@@ -1,5 +1,12 @@
 //: [Previous](@previous)
-// 3. (35) У вас есть объекты Магазин и Касса. Магазин может покупать (если бюджет позволяет) и продавать товары. У магазина есть прямой доступ к кассе, а у покупателей нет. Реализуйте эту схему
+// 3. (35) У вас есть объекты Магазин(Shop) и Касса(Cash). Магазин может покупать (если бюджет позволяет) и продавать товары. У магазина есть прямой доступ к кассе, а у покупателей нет. Реализуйте эту схему.
+
+//Нужно реализовать методы `buy(_ product: Product)` и `sell(_ product: Product)` у класса Shop.
+struct Product {
+    let name: String
+    let price: Int
+}
+
 class Shop {
     private var budget: Cashbox
     private var stock: Stock
@@ -9,22 +16,22 @@ class Shop {
         self.stock = stock
     }
     
-    func buy(_ item: String, _ cost: Int) {
-        if budget.total() >= cost {
-            print("Shop bought \(item)")
-            stock.addItem(item)
-            budget.minus(cost)
+    func buy(_ product: Product) {
+        if budget.total() >= product.price {
+            print("Shop bought \(product.name)")
+            stock.addItem(product.name)
+            budget.minus(product.price)
         } else {
-            print("Sorry, shop has no enough money to buy \(item)")
+            print("Sorry, shop has no enough money to buy \(product.name)")
         }
     }
     
-    func sell(_ item: String) {
-        if stock.items.contains(item) {
-            print("Shop sold \(item)")
-            stock.minus(item)
+    func sell(_ product: Product) {
+        if stock.items.contains(product.name) {
+            print("Shop sold \(product.name)")
+            stock.minus(product.name)
         } else {
-            print("Sorry, shop doesn't have \(item)")
+            print("Sorry, shop doesn't have \(product.name)")
         }
     }
 }
@@ -71,8 +78,10 @@ var someCashbox: Cashbox = Cashbox()
 var someStock: Stock = Stock("NYC")
 var someShop: Shop = Shop(someCashbox, someStock)
 
-someShop.buy("Bread", 190)
-someShop.buy("Lamp", 10900)
-someStock.addItem("Milk")
-someShop.sell("Milk")
-someShop.sell("Milk")
+var someProduct1 = Product(name: "Bread", price: 190)
+var someProduct2 = Product(name: "Lamp", price: 10900)
+
+someShop.buy(someProduct1)
+someShop.buy(someProduct2)
+someShop.sell(someProduct1)
+someShop.sell(someProduct2)
