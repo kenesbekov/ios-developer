@@ -18,7 +18,7 @@ class Rectangle: Shape {
         super.init(height: height, width: width)
     }
     override func area() {
-        print("Rectangle area is " + String(Int(height * height)))
+        print("Rectangle area is " + String(Int(height * width)))
     }
 }
 

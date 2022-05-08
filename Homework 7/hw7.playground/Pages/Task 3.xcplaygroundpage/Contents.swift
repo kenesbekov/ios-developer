@@ -4,13 +4,20 @@
 //input: [Passenger(23), Cargo(500kg), Cargo(600kg)]
 //output: 7480kg
 
-class Passenger {
-    var numberOfPassengers: Int
+class Wagon {
     var selfWeight: Int
+    
+    init(_ weight: Int) {
+        selfWeight = weight
+    }
+}
 
-    init(_ numberOfPassengers: Int) {
+class Passenger: Wagon {
+    var numberOfPassengers: Int
+
+    override init(_ numberOfPassengers: Int) {
         self.numberOfPassengers = numberOfPassengers
-        self.selfWeight = 2000
+        super.init(2000)
     }
 
     func total() -> Int {
@@ -19,13 +26,12 @@ class Passenger {
 }
 
 
-class Cargo {
+class Cargo: Wagon {
     var baggage: Int
-    var selfWeight: Int
 
-    init(_ baggage: Int) {
+    override init(_ baggage: Int) {
         self.baggage = baggage
-        self.selfWeight = 1500
+        super.init(1500)
     }
 
     func total() -> Int {
