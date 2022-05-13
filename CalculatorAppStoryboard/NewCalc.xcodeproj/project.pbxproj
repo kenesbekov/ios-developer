@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0030B35E282E35080036E21C /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0030B35D282E35080036E21C /* CalculatorViewController.swift */; };
 		F12F072B27D5273E009F37BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F072A27D5273E009F37BC /* AppDelegate.swift */; };
 		F12F072D27D5273E009F37BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F072C27D5273E009F37BC /* SceneDelegate.swift */; };
 		F12F072F27D5273E009F37BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F072E27D5273E009F37BC /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0030B35D282E35080036E21C /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		F12F072727D5273E009F37BC /* NewCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F12F072A27D5273E009F37BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F12F072C27D5273E009F37BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				F12F072E27D5273E009F37BC /* ViewController.swift */,
+				0030B35D282E35080036E21C /* CalculatorViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			files = (
 				F12F072F27D5273E009F37BC /* ViewController.swift in Sources */,
 				F12F072B27D5273E009F37BC /* AppDelegate.swift in Sources */,
+				0030B35E282E35080036E21C /* CalculatorViewController.swift in Sources */,
 				F12F072D27D5273E009F37BC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,7 +480,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GM8778RD6Q;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NewCalc/Info.plist;
+				INFOPLIST_FILE = NewCalc/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -504,7 +508,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GM8778RD6Q;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NewCalc/Info.plist;
+				INFOPLIST_FILE = NewCalc/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
