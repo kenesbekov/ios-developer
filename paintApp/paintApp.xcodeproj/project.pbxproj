@@ -9,27 +9,31 @@
 /* Begin PBXBuildFile section */
 		0030B36C282E74B40036E21C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0030B36B282E74B40036E21C /* AppDelegate.swift */; };
 		0030B36E282E74B40036E21C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0030B36D282E74B40036E21C /* SceneDelegate.swift */; };
-		0030B370282E74B40036E21C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0030B36F282E74B40036E21C /* ViewController.swift */; };
-		0030B373282E74B40036E21C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0030B371282E74B40036E21C /* Main.storyboard */; };
 		0030B375282E74B90036E21C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0030B374282E74B90036E21C /* Assets.xcassets */; };
 		0030B378282E74B90036E21C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0030B376282E74B90036E21C /* LaunchScreen.storyboard */; };
-		0030B380282E74F90036E21C /* StarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0030B37F282E74F90036E21C /* StarView.xib */; };
 		0030B382282E75380036E21C /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0030B381282E75380036E21C /* StarView.swift */; };
 		0030B384282E77F30036E21C /* StarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0030B383282E77F30036E21C /* StarViewController.swift */; };
+		007FA2392832055F00E5E64A /* PaintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007FA2382832055F00E5E64A /* PaintViewController.swift */; };
+		007FA23B2832074200E5E64A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007FA23A2832074200E5E64A /* MainViewController.swift */; };
+		007FA2432832230900E5E64A /* PaintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007FA2422832230900E5E64A /* PaintView.swift */; };
+		007FA24728322C6D00E5E64A /* ToolType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007FA24628322C6D00E5E64A /* ToolType.swift */; };
+		007FA24928323CA600E5E64A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007FA24828323CA600E5E64A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0030B368282E74B40036E21C /* paintApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = paintApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0030B36B282E74B40036E21C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0030B36D282E74B40036E21C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0030B36F282E74B40036E21C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0030B372282E74B40036E21C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0030B374282E74B90036E21C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0030B377282E74B90036E21C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0030B379282E74B90036E21C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0030B37F282E74F90036E21C /* StarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarView.xib; sourceTree = "<group>"; };
 		0030B381282E75380036E21C /* StarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
 		0030B383282E77F30036E21C /* StarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarViewController.swift; sourceTree = "<group>"; };
+		007FA2382832055F00E5E64A /* PaintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintViewController.swift; sourceTree = "<group>"; };
+		007FA23A2832074200E5E64A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		007FA2422832230900E5E64A /* PaintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintView.swift; sourceTree = "<group>"; };
+		007FA24628322C6D00E5E64A /* ToolType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolType.swift; sourceTree = "<group>"; };
+		007FA24828323CA600E5E64A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,23 +66,13 @@
 		0030B36A282E74B40036E21C /* paintApp */ = {
 			isa = PBXGroup;
 			children = (
+				007FA24B28323ECD00E5E64A /* AppViews */,
+				007FA24A28323E6E00E5E64A /* AppControllers */,
 				0030B388282E80C30036E21C /* Storyboards */,
-				0030B387282E80A50036E21C /* Controllers */,
+				007FA24C28323EE300E5E64A /* SupportingFiles */,
 				0030B386282E809A0036E21C /* Delegates */,
-				0030B385282E80830036E21C /* Views */,
-				0030B374282E74B90036E21C /* Assets.xcassets */,
-				0030B379282E74B90036E21C /* Info.plist */,
 			);
 			path = paintApp;
-			sourceTree = "<group>";
-		};
-		0030B385282E80830036E21C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				0030B37F282E74F90036E21C /* StarView.xib */,
-				0030B381282E75380036E21C /* StarView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		0030B386282E809A0036E21C /* Delegates */ = {
@@ -90,22 +84,42 @@
 			path = Delegates;
 			sourceTree = "<group>";
 		};
-		0030B387282E80A50036E21C /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				0030B383282E77F30036E21C /* StarViewController.swift */,
-				0030B36F282E74B40036E21C /* ViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		0030B388282E80C30036E21C /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				0030B371282E74B40036E21C /* Main.storyboard */,
+				007FA24828323CA600E5E64A /* Main.storyboard */,
 				0030B376282E74B90036E21C /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		007FA24A28323E6E00E5E64A /* AppControllers */ = {
+			isa = PBXGroup;
+			children = (
+				007FA23A2832074200E5E64A /* MainViewController.swift */,
+				0030B383282E77F30036E21C /* StarViewController.swift */,
+				007FA2382832055F00E5E64A /* PaintViewController.swift */,
+			);
+			path = AppControllers;
+			sourceTree = "<group>";
+		};
+		007FA24B28323ECD00E5E64A /* AppViews */ = {
+			isa = PBXGroup;
+			children = (
+				0030B381282E75380036E21C /* StarView.swift */,
+				007FA2422832230900E5E64A /* PaintView.swift */,
+			);
+			path = AppViews;
+			sourceTree = "<group>";
+		};
+		007FA24C28323EE300E5E64A /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				007FA24628322C6D00E5E64A /* ToolType.swift */,
+				0030B374282E74B90036E21C /* Assets.xcassets */,
+				0030B379282E74B90036E21C /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,10 +180,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007FA24928323CA600E5E64A /* Main.storyboard in Resources */,
 				0030B378282E74B90036E21C /* LaunchScreen.storyboard in Resources */,
 				0030B375282E74B90036E21C /* Assets.xcassets in Resources */,
-				0030B380282E74F90036E21C /* StarView.xib in Resources */,
-				0030B373282E74B40036E21C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,10 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0030B370282E74B40036E21C /* ViewController.swift in Sources */,
+				007FA23B2832074200E5E64A /* MainViewController.swift in Sources */,
+				007FA2432832230900E5E64A /* PaintView.swift in Sources */,
+				007FA2392832055F00E5E64A /* PaintViewController.swift in Sources */,
 				0030B36C282E74B40036E21C /* AppDelegate.swift in Sources */,
 				0030B382282E75380036E21C /* StarView.swift in Sources */,
 				0030B36E282E74B40036E21C /* SceneDelegate.swift in Sources */,
+				007FA24728322C6D00E5E64A /* ToolType.swift in Sources */,
 				0030B384282E77F30036E21C /* StarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,14 +207,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0030B371282E74B40036E21C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0030B372282E74B40036E21C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0030B376282E74B90036E21C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -332,7 +340,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = paintApp/Info.plist;
+				INFOPLIST_FILE = paintApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -359,7 +367,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = paintApp/Info.plist;
+				INFOPLIST_FILE = paintApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
